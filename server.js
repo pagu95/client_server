@@ -3,11 +3,11 @@ const express = require('express')
 const WebSocketServer = require('ws').Server,
 	wss = new WebSocketServer({port: 40510})
 
-
-const app = express();//
+/*
+const app = express();
 const port = 8080;
 const host = 'localhost';
-
+*/
 
 
 var myarray = [];
@@ -39,10 +39,10 @@ myarray.push({
     "year": 2016
 });
 
-
+	/*
 	app.get('/',function (req,res) { res.send('Hello world'); });
 	app.listen(port,host); console.log('i listen at port 3000');
-	/**/
+	*/
 
 
 	wss.on('connection', function(ws){
